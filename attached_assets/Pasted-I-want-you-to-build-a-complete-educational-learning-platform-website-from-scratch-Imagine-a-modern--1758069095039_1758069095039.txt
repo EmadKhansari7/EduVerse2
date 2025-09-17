@@ -1,0 +1,118 @@
+I want you to build a complete educational learning platform website from scratch. Imagine a modern, Persian/English bilingual e-learning platform similar to popular platforms like Udemy, but designed specifically for Iranian users. The platform will offer online video-based courses, articles, user dashboards, instructor dashboards, and a payment system. Please generate **all necessary frontend and backend code** with clean structure, comments, and modularity.
+
+Please follow these exact requirements:
+
+---------------------------------
+🔹 General Stack and Technology
+---------------------------------
+- Frontend: React + Vite + Tailwind CSS
+- UI components: shadcn/ui + lucide-react icons
+- Backend: Node.js (Express framework)
+- Database: MongoDB (Mongoose)
+- Authentication: JWT-based system with password hashing (bcrypt)
+- Payment Gateway: Support for Iranian payment systems (like Zarinpal) through mock API integration
+- File Storage: Upload video and image files to a cloud service (simulate with local storage for now)
+- Responsive design (mobile, tablet, desktop)
+- SEO-friendly structure
+
+---------------------------------
+🔹 Core Pages & Features
+---------------------------------
+
+**1. Home Page**
+- Hero section with large banner and call-to-action
+- Categories section (show several course categories)
+- "Popular Courses" section (cards with course image, title, price, instructor name, rating)
+- "New Courses" section
+- Testimonials from students
+- Blog article previews
+- Footer with about info, links, contact info, and social media icons
+
+**2. Course Listing Page**
+- Grid of all courses with pagination
+- Filter panel: category, price (free/paid), difficulty level, instructor, and sort by newest/popularity
+- Search bar for course titles and descriptions
+
+**3. Course Details Page**
+- Course title, description, cover image
+- Introductory video (free preview)
+- Instructor profile card (photo, bio, number of students, number of courses)
+- Full syllabus/lessons list
+- Price and Buy button
+- Ratings and reviews from students
+- “Add to wishlist” button
+- Show if the user has already purchased this course
+
+**4. Authentication Pages**
+- Login with email/password and Google OAuth
+- Register with name, email, password
+- Forgot/reset password functionality
+- JWT authentication and refresh tokens
+
+**5. Student Dashboard**
+- My Courses: list of purchased courses
+- Watch course videos (video player with lesson navigation)
+- Progress tracking
+- Profile page: edit name, email, password, profile picture
+- Notifications center
+
+**6. Instructor Dashboard**
+- Create, edit, delete courses (CRUD)
+- Upload videos and course materials
+- View list of students enrolled
+- View total earnings and sales statistics
+- Edit profile
+
+**7. Admin Panel**
+- Manage all users, instructors, and courses
+- Approve or reject courses submitted by instructors
+- View site-wide statistics (total revenue, number of courses, users, reviews)
+
+**8. Blog System**
+- Blog listing page with search and categories
+- Blog article details page with comments section
+- Rich text editor for admin to create articles
+
+**9. Static Pages**
+- About Us page (mission, team)
+- Contact Us page (form + contact info)
+- Terms of Service and Privacy Policy pages
+
+---------------------------------
+🔹 Backend Features
+---------------------------------
+- RESTful API endpoints for:
+   - Authentication (register, login, logout, refresh token)
+   - Courses (CRUD)
+   - Lessons (CRUD)
+   - Users (CRUD)
+   - Reviews and ratings
+   - Payments (mock)
+   - Blog posts (CRUD)
+- Role-based access control: Admin, Instructor, Student
+- Input validation using JOI or express-validator
+- Handle file uploads (video, images)
+- Serve static media files securely
+- Logging and error handling middleware
+
+---------------------------------
+🔹 Frontend Features
+---------------------------------
+- Fully responsive layout using Tailwind
+- Dark/light mode toggle
+- Clean folder structure: pages, components, hooks, contexts, services
+- Axios for API requests with auth interceptors
+- React Router for routing
+- Context API or Redux Toolkit for global state (user auth, cart, theme, etc.)
+- Reusable UI components: buttons, cards, modals, forms, dropdowns, search bars
+- Loading skeletons and spinners
+- Toast notifications for success/error actions
+
+---------------------------------
+🔹 Additional Requirements
+---------------------------------
+- Write clean, commented, modular code
+- Include installation and setup instructions (README)
+- Make sure the platform is easily extensible and maintainable
+- Prepare seed data for some demo users, instructors, courses, and blog articles
+- Support Persian (RTL) and English (LTR) languages (basic i18n setup)
